@@ -1,0 +1,13 @@
+[Unit]
+Description=RPC++ is a tool for Discord RPC (Rich Presence) to let your friends know about your Linux system
+Documentation=https://github.com/ponfertato/rpcpp
+After=network.target multi-user.target graphical-session.target
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+ExecStart=-/usr/bin/env rpcpp
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
