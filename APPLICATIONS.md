@@ -15,5 +15,3 @@
 - Dolphin
 - Telegram
 - Konsole
-- Ahses Town Game
-- Pony Town Game
