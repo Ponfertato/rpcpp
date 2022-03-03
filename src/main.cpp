@@ -101,7 +101,7 @@ int main(int argc, char **argv)
     DiscordState state{};
 
     discord::Core *core{};
-    auto result = discord::Core::Create(934099338374824007, DiscordCreateFlags_Default, &core);
+    auto result = discord::Core::Create(948955036761862184, DiscordCreateFlags_Default, &core);
     state.core.reset(core);
     if (!state.core)
     {

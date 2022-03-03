@@ -31,9 +31,9 @@ string distro;
 static int trapped_error_code = 0;
 string wm;
 
-vector<string> apps = {"blender", "chrome", "discord", "firefox", "gimp", "hoi4", "st", "surf", "vscode"};                                                                                                   // currently supported app icons on discord rpc (replace if you made your own discord application)
-map<string, string> aliases = {{"chromium", "chrome"}, {"vscodium", "vscode"}, {"code", "vscode"}, {"code - [a-z]+", "vscode"}, {"stardew valley", "stardewvalley"}, {"minecraft [a-z0-9.]+", "minecraft"}}; // for apps with different names
-map<string, string> distros = {{"Arch|Artix", "archlinux"}, {"LinuxMint", "lmint"}, {"Gentoo", "gentoo"}, {"Ubuntu", "ubuntu"}, {"ManjaroLinux", "manjaro"}};
+vector<string> apps = {"blender", "code-oss", "discord", "firefox", "gimp", "inkscape", "krita", "lutris", "spotify-client", "steam", "system-file-manager", "telegram", "utilities-terminal", "ahses-town", "pony-town"};   // currently supported app icons on discord rpc (replace if you made your own discord application)
+map<string, string> aliases = {{"vscodium", "code-oss"}, {"code", "code-oss"}, {"code-[a-z]+", "code-oss"}, {"spotify", "spotify-client"}, {"dolphin", "system-file-manager"}, {"konsole", "utilities-terminal"}, {"Ashes Town", "ahses-town"}, {"Pony Town", "pony-town"}};  // for apps with different names, plasma apps included
+map<string, string> distros = {{"Arch", "archlinux"}}; // only arch system on rpc
 string helpMsg = string(
                      "Usage:\n") +
                  " rpcpp [options]\n\n" +
