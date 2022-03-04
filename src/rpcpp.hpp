@@ -32,7 +32,7 @@ static int trapped_error_code = 0;
 string wm;
 
 vector<string> apps = {"blender", "code-oss", "discord", "firefox", "gimp", "inkscape", "krita", "lutris", "spotify-client", "steam", "system-file-manager", "telegram", "utilities-terminal"};   // currently supported app icons on discord rpc (replace if you made your own discord application)
-map<string, string> aliases = {{"vscodium", "code-oss"}, {"code", "code-oss"}, {"code-[a-z]+", "code-oss"}, {"spotify", "spotify-client"}, {"dolphin", "system-file-manager"}, {"konsole", "utilities-terminal"}};  // for apps with different names, plasma apps included
+map<string, string> aliases = {{"vscodium", "code-oss"}, {"code", "code-oss"}, {"code-[a-z]+", "code-oss"}, {"spotify", "spotify-client"}, {"dolphin", "system-file-manager"}, {"telegramdesktop", "telegram"}, {"konsole", "utilities-terminal"}};  // for apps with different names, plasma apps included
 map<string, string> distros = {{"Arch", "archlinux"}}; // only arch system on rpc
 string helpMsg = string(
                      "Usage:\n") +
