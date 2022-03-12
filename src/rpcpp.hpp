@@ -31,8 +31,17 @@ string distro;
 static int trapped_error_code = 0;
 string wm;
 
-vector<string> apps = {"blender", "code-oss", "discord", "firefox", "gimp", "inkscape", "krita", "lutris", "spotify-client", "steam", "system-file-manager", "telegram", "utilities-terminal"};   // currently supported app icons on discord rpc (replace if you made your own discord application)
-map<string, string> aliases = {{"vscodium", "code-oss"}, {"code", "code-oss"}, {"code-[a-z]+", "code-oss"}, {"spotify", "spotify-client"}, {"dolphin", "system-file-manager"}, {"telegramdesktop", "telegram"}, {"konsole", "utilities-terminal"}};  // for apps with different names, plasma apps included
+vector<string> apps = {"blender", "code-oss", "com_usebottles_bottles", "discord", "firefox", "gimp", "inkscape", "krita", "lutris", "spotify-client", "steam", "superproductivity",
+                        "system-file-manager", "telegram", "utilities-terminal", "cuttlefish", "electron", "jetbrains-toolbox", "com_jetbrains_clion", "com_jetbrains_datagrip",
+                        "com_jetbrains_goland", "com_jetbrains_intellij-idea-community", "com_jetbrains_intellij-idea-ultimate", "com_jetbrains_phpstorm", "com_jetbrains_pycharm-community",
+                        "com_jetbrains_pycharm-professional", "com_jetbrains_rider", "com_jetbrains_rubymine", "com_jetbrains_webstorm", "onlyoffice-desktopeditors", "plasmadiscover",
+                        "systemsettings", "system-run", "com_mojang_minecraft", "com_sublimemerge_app", "com_sublimetext_three", "kate", "ark"};   // currently supported app icons on discord rpc (replace if you made your own discord application)
+map<string, string> aliases = {{"vscodium", "code-oss"}, {"code", "code-oss"}, {"code-[a-z]+", "code-oss"}, {"bottles", "com_usebottles_bottles"}, {"spotify", "spotify-client"},
+                        {"dolphin", "system-file-manager"}, {"telegramdesktop", "telegram"}, {"konsole", "utilities-terminal"}, {"electron+[a-z]+", "electron"}, {"jetbrains-clion", "com_jetbrains_clion"},
+                        {"jetbrains-datagrip", "com_jetbrains_datagrip"}, {"jetbrains-goland", "com_jetbrains_goland"}, {"jetbrains-intellij-idea-community", "com_jetbrains_intellij-idea-community"},
+                        {"jetbrains-intellij-idea-ultimate", "com_jetbrains_intellij-idea-ultimate"}, {"jetbrains-phpstorm", "com_jetbrains_phpstorm"}, {"jetbrains-pycharm-community", "com_jetbrains_pycharm-community"},
+                        {"jetbrains-pycharm-professional", "com_jetbrains_pycharm-professional"}, {"jetbrains-rider", "com_jetbrains_rider"}, {"jetbrains-rubymine", "com_jetbrains_rubymine"},
+                        {"jetbrains-webstorm", "com_jetbrains_webstorm"}, {"desktopeditors","onlyoffice-desktopeditors"}, {"discover", "plasmadiscover"}, {"plasmashell", "system-run"}};  // for apps with different names, plasma apps included
 map<string, string> distros = {{"Arch", "archlinux"}}; // only arch system on rpc
 string helpMsg = string(
                      "Usage:\n") +
